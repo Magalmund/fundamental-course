@@ -3,7 +3,7 @@ Theme List:
 	- Согласование (Reconciliation)
 	- useState(Hook)
 	- useEffect(Hook)
-	- useRef(Hook)
+	- useRef(Hook) (00:50:55)
 	- useMemo(Hook)
 	- useCallback(Hook)
 	- useContext(Hook)
@@ -12,6 +12,14 @@ Theme List:
 	- Классовый компонент (00:26:40)
 	- Функциональный компнент(Обычный компонент)
 	- className(Добавление стилей)
+	- Props
+	- Css module
+	- props.children
 
+
+JS definitions:
+
+	- Array.map
+	- Оператор Spread (...props)
 
 00:34:30
