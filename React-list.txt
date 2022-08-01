@@ -23,3 +23,4 @@ JS definitions:
 	- Оператор Spread (...props)
 
 00:34:30
+00:57:33
