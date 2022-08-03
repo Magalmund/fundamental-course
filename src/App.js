@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
+import PostForm from './components/PostForm';
 import PostList from './components/PostList';
-import Button from './components/UI/Button/Button';
-import Input from './components/UI/Input/Input';
+import Select from './components/UI/Select/Select';
 import './styles/App.css'
 
 function App() {
@@ -9,24 +9,42 @@ function App() {
 		{id: 1, title: 'JavaScript', body: 'Description'},
 		{id: 2, title: 'JavaScript 2', body: 'Description 2'},
 		{id: 3, title: 'JavaScript 2', body: 'Description 3'},
-
 	])
 
+	const [selectedSort, setSelectedSort] = useState('')
 
-	const [post, setPost] = useState ({title: '', body: ''})
-	function addNewPost (e) {
-		e.preventDefault();
-		setPosts([...posts, {...post, id: Date.now()}])
-		setPost({title: '', body: ''})
+	function createPost (newPost) {
+		setPosts([...posts, newPost])
 	}
+
+	function removePost (post) {
+		setPosts(posts.filter(p => p.id !== post.id))
+	}
+
+	function sortPosts (sort) {
+		setSelectedSort(sort)
+		setPosts(posts.sort())
+	}
+
   return (
     <div className="App">
-			<form>
-				<Input type="text" placeholder="Название поста" value={post.title} onChange={e => setPost({...post, title: e.target.value})}/>
-				<Input type="text" placeholder="Описание поста" value={post.body} onChange={e => setPost({...post, body: e.target.value})}/>
-				<Button onClick={addNewPost}>Создать пост</Button>
-			</form>
-			<PostList posts={posts} title={'Список постов'}/>
+			<PostForm create={createPost}/>
+			<hr style={{margin:'15px 0'}}/>
+			<div>
+				<Select
+					defaultValue='Сортировка'
+					value={selectedSort}
+					onChange={sortPosts}
+					options={[
+						{value:'title', name:'По названию'},
+						{value:'body', name:'По описанию'}
+					]}
+				/>
+			</div>
+			{posts.length
+				? <PostList remove={removePost} posts={posts} title={'Список постов'}/>
+				: <h1 style={{textAlign:'center'}}>Посты не были найдены</h1>
+			}
     </div>
   );
 }

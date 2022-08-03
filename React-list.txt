@@ -21,6 +21,8 @@ JS definitions:
 
 	- Array.map
 	- Оператор Spread (...props)
+	- Callback function
+	- Замыкание (function)
 
 00:34:30
 00:57:33
