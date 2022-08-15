@@ -15,14 +15,20 @@ Theme List:
 	- Props
 	- Css module
 	- props.children
-
+	- Условная отрисовка
 
 JS definitions:
 
 	- Array.map
+	- String.prototype.replace
 	- Оператор Spread (...props)
-	- Callback function
-	- Замыкание (function)
+	- RegExp
+	- Callback function (00:59:20)
+	- array.filter
+	- String.prototype.localeCompare()
+	- Array.sort()
 
 00:34:30
-00:57:33
+1:11:51
+
+NB! sort, localecompare
