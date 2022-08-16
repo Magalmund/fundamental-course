@@ -4,7 +4,7 @@ Theme List:
 	- useState(Hook)
 	- useEffect(Hook)
 	- useRef(Hook) (00:50:55)
-	- useMemo(Hook)
+	- useMemo(Hook) (1:15:22)
 	- useCallback(Hook)
 	- useContext(Hook)
 	- onCLick, onChange(Слушатель событий)
@@ -16,6 +16,9 @@ Theme List:
 	- Css module
 	- props.children
 	- Условная отрисовка
+	- React transition group
+	- Axios
+	- Жизненный цикл компонента(useEffect)(1:38:40)
 
 JS definitions:
 
@@ -27,6 +30,7 @@ JS definitions:
 	- array.filter
 	- String.prototype.localeCompare()
 	- Array.sort()
+	- Try...Catch()...
 
 00:34:30
 1:11:51
