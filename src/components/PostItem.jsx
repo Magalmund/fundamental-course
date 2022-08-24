@@ -4,7 +4,6 @@ import {useNavigate} from "react-router-dom";
 
 function PostItem(props) {
 	const router = useNavigate()
-	console.log(router)
 	return (
 		<div>
 			<div className="post">
@@ -15,7 +14,7 @@ function PostItem(props) {
 					</div>
 				</div>
 				<div className="post-btn">
-					<Button onClick={() => router(`/post`)}>Открыть</Button>
+					<Button onClick={() => router(`/posts/${props.post.id}`)}>Открыть</Button>
 					<Button onClick={() => props.remove(props.post)}>Удаление</Button>
 				</div>
 			</div>

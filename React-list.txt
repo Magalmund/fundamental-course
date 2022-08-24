@@ -38,9 +38,10 @@ JS definitions:
 1:11:51 - step-2
 2:00:20, 2:00:57 - Homework
 
-2:11:45- continue watch
+2:11:45 - continue watch
 2:19:25 - continue watch
-2:25:00 - contonue watch
+2:25:00 - continue watch
+2:33:07 - continue watch
 
 
 NB! sort, localecompare

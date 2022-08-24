@@ -10,10 +10,10 @@ const AppRouter = () => {
     return (
         <Routes>
             <Route path="/posts" element={<Posts />} />
-            <Route path="/post" element={<PostIdPage />} />
+            <Route path="/posts/:id" element={<PostIdPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
-            <Route path="*" element={<Navigate to="/error" replace />}/>
+            <Route path="*" element={<Navigate to="/posts" replace />}/>
             {/*<Route*/}
             {/*	path="*"*/}
             {/*	element={*/}
