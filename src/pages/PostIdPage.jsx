@@ -21,7 +21,6 @@ const PostIdPage = () => {
         fetchPostById(params.id)
         fetchComments(params.id)
     }, [])
-    console.log(comments)
     return (
         <div>
             <h1>Open Post = {params.id}</h1>
@@ -34,7 +33,7 @@ const PostIdPage = () => {
                 ? <Loader/>
                 : <div>
                     {comments.map(comment =>
-                        <div style={{marginTop: 15}}>
+                        <div key={comment.id} style={{marginTop: 15}}>
                             <h5>{comment.email}</h5>
                             <div>{comment.body}</div>
                         </div>
