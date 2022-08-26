@@ -33,6 +33,7 @@ JS definitions:
 	- Try...Catch()...
 	- stopPropagation()
 	- Async/await
+	- Intersection Observer API(2:48:30)
 
 00:34:30 - step-1
 1:11:51 - step-2
